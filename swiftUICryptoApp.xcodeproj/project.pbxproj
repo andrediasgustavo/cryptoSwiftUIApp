@@ -16,6 +16,9 @@
 		73D6F8A92C0BA3D000E0E4D2 /* CircleButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73D6F8A82C0BA3D000E0E4D2 /* CircleButtonView.swift */; };
 		73D6F8AB2C0BA83B00E0E4D2 /* CircleButtonAnimationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73D6F8AA2C0BA83B00E0E4D2 /* CircleButtonAnimationView.swift */; };
 		73D6F8AE2C0CD40100E0E4D2 /* CoinModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73D6F8AD2C0CD40100E0E4D2 /* CoinModel.swift */; };
+		73D6F8B02C0CD71E00E0E4D2 /* CoinRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73D6F8AF2C0CD71E00E0E4D2 /* CoinRowView.swift */; };
+		73D6F8B22C0CD77D00E0E4D2 /* PreviewProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73D6F8B12C0CD77D00E0E4D2 /* PreviewProvider.swift */; };
+		73D6F8B42C0CE5F000E0E4D2 /* Double.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73D6F8B32C0CE5F000E0E4D2 /* Double.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +32,9 @@
 		73D6F8A82C0BA3D000E0E4D2 /* CircleButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleButtonView.swift; sourceTree = "<group>"; };
 		73D6F8AA2C0BA83B00E0E4D2 /* CircleButtonAnimationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleButtonAnimationView.swift; sourceTree = "<group>"; };
 		73D6F8AD2C0CD40100E0E4D2 /* CoinModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoinModel.swift; sourceTree = "<group>"; };
+		73D6F8AF2C0CD71E00E0E4D2 /* CoinRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinRowView.swift; sourceTree = "<group>"; };
+		73D6F8B12C0CD77D00E0E4D2 /* PreviewProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewProvider.swift; sourceTree = "<group>"; };
+		73D6F8B32C0CE5F000E0E4D2 /* Double.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Double.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +90,8 @@
 			isa = PBXGroup;
 			children = (
 				73D6F89E2C0B8FD800E0E4D2 /* Color.swift */,
+				73D6F8B12C0CD77D00E0E4D2 /* PreviewProvider.swift */,
+				73D6F8B32C0CE5F000E0E4D2 /* Double.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -110,6 +118,7 @@
 			isa = PBXGroup;
 			children = (
 				73D6F8A42C0B95CF00E0E4D2 /* HomeView.swift */,
+				73D6F8AF2C0CD71E00E0E4D2 /* CoinRowView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -216,12 +225,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				73D6F8B02C0CD71E00E0E4D2 /* CoinRowView.swift in Sources */,
 				73D6F8922C0B8B1200E0E4D2 /* ContentView.swift in Sources */,
 				73D6F8A52C0B95CF00E0E4D2 /* HomeView.swift in Sources */,
 				73D6F8902C0B8B1200E0E4D2 /* swiftUICryptoAppApp.swift in Sources */,
 				73D6F8A92C0BA3D000E0E4D2 /* CircleButtonView.swift in Sources */,
 				73D6F89F2C0B8FD800E0E4D2 /* Color.swift in Sources */,
 				73D6F8AB2C0BA83B00E0E4D2 /* CircleButtonAnimationView.swift in Sources */,
+				73D6F8B22C0CD77D00E0E4D2 /* PreviewProvider.swift in Sources */,
+				73D6F8B42C0CE5F000E0E4D2 /* Double.swift in Sources */,
 				73D6F8AE2C0CD40100E0E4D2 /* CoinModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -281,7 +293,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -338,7 +350,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
