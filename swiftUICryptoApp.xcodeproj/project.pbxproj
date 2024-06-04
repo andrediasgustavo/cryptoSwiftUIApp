@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		737EBFB12C0EA65F00523DAF /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 737EBFB02C0EA65F00523DAF /* HomeViewModel.swift */; };
 		73D6F8902C0B8B1200E0E4D2 /* swiftUICryptoAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73D6F88F2C0B8B1200E0E4D2 /* swiftUICryptoAppApp.swift */; };
 		73D6F8922C0B8B1200E0E4D2 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73D6F8912C0B8B1200E0E4D2 /* ContentView.swift */; };
 		73D6F8942C0B8B1300E0E4D2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 73D6F8932C0B8B1300E0E4D2 /* Assets.xcassets */; };
@@ -22,6 +23,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		737EBFB02C0EA65F00523DAF /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		73D6F88C2C0B8B1200E0E4D2 /* swiftUICryptoApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = swiftUICryptoApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		73D6F88F2C0B8B1200E0E4D2 /* swiftUICryptoAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = swiftUICryptoAppApp.swift; sourceTree = "<group>"; };
 		73D6F8912C0B8B1200E0E4D2 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -126,6 +128,7 @@
 		73D6F8A32C0B95B200E0E4D2 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				737EBFB02C0EA65F00523DAF /* HomeViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -226,6 +229,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				73D6F8B02C0CD71E00E0E4D2 /* CoinRowView.swift in Sources */,
+				737EBFB12C0EA65F00523DAF /* HomeViewModel.swift in Sources */,
 				73D6F8922C0B8B1200E0E4D2 /* ContentView.swift in Sources */,
 				73D6F8A52C0B95CF00E0E4D2 /* HomeView.swift in Sources */,
 				73D6F8902C0B8B1200E0E4D2 /* swiftUICryptoAppApp.swift in Sources */,
