@@ -19,6 +19,9 @@ struct HomeView: View {
             
             VStack {
                 homeHeader()
+                
+                SearchBarView(searchText: $viewModel.searchText)
+                
                 headerColumn()
                 
                 if !showPortfolio {
@@ -106,6 +109,7 @@ struct HomeView_Previews: PreviewProvider {
         NavigationView {
             HomeView()
                 .navigationBarHidden(true)
+                .colorScheme(.dark)
         }
         .environmentObject(dev.homeVM)
     }
