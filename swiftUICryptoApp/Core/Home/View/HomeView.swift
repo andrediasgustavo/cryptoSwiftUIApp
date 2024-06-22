@@ -97,6 +97,11 @@ extension HomeView {
             }
         }
         .listStyle(.plain)
+        .refreshable {
+            withAnimation(.linear(duration: 1.5)) {
+                viewModel.reloadData()
+            }
+        }
     }
     
     private func headerColumn() -> some View {
