@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		73655D162C2FA644009DCEE1 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73655D152C2FA643009DCEE1 /* String.swift */; };
 		73655D1A2C2FB517009DCEE1 /* Settingsview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73655D192C2FB517009DCEE1 /* Settingsview.swift */; };
+		73655D1E2C305791009DCEE1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 73655D1D2C305791009DCEE1 /* LaunchScreen.storyboard */; };
 		737EBFB12C0EA65F00523DAF /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 737EBFB02C0EA65F00523DAF /* HomeViewModel.swift */; };
 		737EBFB42C0EB09500523DAF /* CoinDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 737EBFB32C0EB09500523DAF /* CoinDataService.swift */; };
 		737EBFB72C0F730A00523DAF /* NetworkingManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 737EBFB62C0F730A00523DAF /* NetworkingManager.swift */; };
@@ -51,6 +52,7 @@
 /* Begin PBXFileReference section */
 		73655D152C2FA643009DCEE1 /* String.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
 		73655D192C2FB517009DCEE1 /* Settingsview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settingsview.swift; sourceTree = "<group>"; };
+		73655D1D2C305791009DCEE1 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		737EBFB02C0EA65F00523DAF /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		737EBFB32C0EB09500523DAF /* CoinDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinDataService.swift; sourceTree = "<group>"; };
 		737EBFB62C0F730A00523DAF /* NetworkingManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingManager.swift; sourceTree = "<group>"; };
@@ -114,6 +116,22 @@
 			isa = PBXGroup;
 			children = (
 				73655D192C2FB517009DCEE1 /* Settingsview.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		73655D1B2C305763009DCEE1 /* Launch */ = {
+			isa = PBXGroup;
+			children = (
+				73655D1C2C305770009DCEE1 /* Views */,
+			);
+			path = Launch;
+			sourceTree = "<group>";
+		};
+		73655D1C2C305770009DCEE1 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				73655D1D2C305791009DCEE1 /* LaunchScreen.storyboard */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -231,6 +249,7 @@
 		73D6F8A02C0B957F00E0E4D2 /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				73655D1B2C305763009DCEE1 /* Launch */,
 				73D6F8A62C0BA39B00E0E4D2 /* Components */,
 				73D6F8A12C0B958700E0E4D2 /* Home */,
 				73C6056B2C2CF6EC00496EF0 /* Detail */,
@@ -358,6 +377,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				73655D1E2C305791009DCEE1 /* LaunchScreen.storyboard in Resources */,
 				73D6F8972C0B8B1300E0E4D2 /* Preview Assets.xcassets in Resources */,
 				73D6F8942C0B8B1300E0E4D2 /* Assets.xcassets in Resources */,
 			);
@@ -546,7 +566,7 @@
 				INFOPLIST_KEY_CFBundleDisplayName = "Crypto Tracker";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -580,7 +600,7 @@
 				INFOPLIST_KEY_CFBundleDisplayName = "Crypto Tracker";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
