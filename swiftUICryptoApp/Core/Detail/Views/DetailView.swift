@@ -25,6 +25,7 @@ struct DetailLoadingView: View {
 struct DetailView: View {
     
     @StateObject private var viewModel: DetailViewModel
+    @State private var showFullDescription: Bool = false
     private let collumns: [GridItem] = [
         GridItem(.flexible()),
         GridItem(.flexible())
@@ -45,10 +46,12 @@ struct DetailView: View {
                     
                     overviewTitle()
                     Divider()
+                    descriptionSection()
                     overViewGrid()
                     additionalTitle()
                     Divider()
                     additionalGrid()
+                    websiteSection()
                 }
                 .padding()
             }
@@ -82,6 +85,33 @@ extension DetailView {
             .frame(maxWidth: .infinity, alignment: .leading)
     }
     
+    private func descriptionSection() -> some View {
+        ZStack {
+            if let description = viewModel.coinDescription,
+               !description.isEmpty {
+                VStack(alignment: .leading) {
+                    Text(description)
+                        .lineLimit(showFullDescription ? nil : 3)
+                        .font(.callout)
+                        .foregroundColor(Color.theme.secondaryText)
+                    
+                    Button {
+                        withAnimation(.easeInOut) {
+                            showFullDescription.toggle()
+                        }
+                    } label: {
+                        Text(showFullDescription ? "Less" : "Read more...")
+                            .font(.caption)
+                            .fontWeight(.bold)
+                            .padding(.vertical, 4)
+                    }
+                    .accentColor(.blue)
+                }
+                .frame(maxWidth: .infinity, alignment: .leading)
+            }
+        }
+    }
+    
     private func additionalTitle() -> some View {
         Text("Additional Details")
             .font(.title)
@@ -112,6 +142,23 @@ extension DetailView {
                 StatisticView(stat: stats)
             }
         })
+    }
+    
+    private func websiteSection() -> some View {
+        VStack(alignment: .leading, spacing: 20) {
+            if let websiteString = viewModel.websiteURL,
+               let websiteURL = URL(string: websiteString) {
+                Link("Website", destination: websiteURL)
+            }
+            
+            if let redditString = viewModel.redditURL,
+               let redditURL = URL(string: redditString) {
+                Link("Reddit", destination: redditURL)
+            }
+        }
+        .accentColor(.blue)
+        .frame(maxWidth: .infinity, alignment: .leading)
+        .font(.headline)
     }
 }
 

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		73655D162C2FA644009DCEE1 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73655D152C2FA643009DCEE1 /* String.swift */; };
 		737EBFB12C0EA65F00523DAF /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 737EBFB02C0EA65F00523DAF /* HomeViewModel.swift */; };
 		737EBFB42C0EB09500523DAF /* CoinDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 737EBFB32C0EB09500523DAF /* CoinDataService.swift */; };
 		737EBFB72C0F730A00523DAF /* NetworkingManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 737EBFB62C0F730A00523DAF /* NetworkingManager.swift */; };
@@ -47,6 +48,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		73655D152C2FA643009DCEE1 /* String.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
 		737EBFB02C0EA65F00523DAF /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		737EBFB32C0EB09500523DAF /* CoinDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinDataService.swift; sourceTree = "<group>"; };
 		737EBFB62C0F730A00523DAF /* NetworkingManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingManager.swift; sourceTree = "<group>"; };
@@ -203,6 +205,7 @@
 				73D6F8B32C0CE5F000E0E4D2 /* Double.swift */,
 				73A560D72C14C7E800F38577 /* UIApplication.swift */,
 				73C6057C2C2E477500496EF0 /* Date.swift */,
+				73655D152C2FA643009DCEE1 /* String.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -378,6 +381,7 @@
 				73D6F8B22C0CD77D00E0E4D2 /* PreviewProvider.swift in Sources */,
 				73C6057B2C2E3EE400496EF0 /* ChartView.swift in Sources */,
 				73C3A5342C1FC218005CEE29 /* PortfolioView.swift in Sources */,
+				73655D162C2FA644009DCEE1 /* String.swift in Sources */,
 				73D6F8B42C0CE5F000E0E4D2 /* Double.swift in Sources */,
 				73C605752C2D012200496EF0 /* CoinDetailDataService.swift in Sources */,
 				73B954B42C10004300018868 /* CoinImageService.swift in Sources */,
