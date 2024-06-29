@@ -43,7 +43,6 @@ struct DetailView: View {
                     .padding(.vertical)
                 
                 VStack(spacing: 20) {
-                    
                     overviewTitle()
                     Divider()
                     descriptionSection()
@@ -56,6 +55,10 @@ struct DetailView: View {
                 .padding()
             }
         }
+        .background(
+            Color.theme.background
+                .ignoresSafeArea()
+        )
         .navigationTitle(viewModel.coin.name)
         .toolbar {
             ToolbarItem(placement: .navigationBarTrailing) {
